@@ -2,7 +2,7 @@
 
 from app.db.session import engine
 from app.models.base import Base
-from app.models import post  # важно: импорт модели обязателен
+from app.models import post, user  # важно: импорт модели обязателен
 
 async def init_db():
     async with engine.begin() as conn:
